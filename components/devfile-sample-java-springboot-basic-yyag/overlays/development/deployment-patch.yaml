@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-yyag
+  namespace: dhaynes-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:67bd70c062b554645b07b105887ebc1a4d7605300ca20176a06a48a56506d8e5
+        name: my-java-springboot
+        resources: {}
+status: {}
